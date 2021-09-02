@@ -1,0 +1,64 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.message{
+  border-bottom: 1px solid rgb(223, 223, 223);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 400px;
+  padding: 15px;
+}
+.message .time{
+  color: #b4b4b4;
+  font-size: 15px;
+}
+.messageList{
+  position: relative;
+}
+.messageList span{
+  color: #96c5ed;
+}
+.messageList #customerManagement{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #96c5ed;
+}
+.messageList div:nth-child(1){
+  font-size: 20px;
+  color: #4e4f4f;
+  padding-bottom: 10px;
+}
+.messageList p:nth-child(2){
+  display: none;
+  color: #4e4f4f;
+  padding-bottom: 10px;
+}
+.messageList p:nth-child(3){
+  display: none;
+  color: #4e4f4f;
+  padding-bottom: 10px;
+}
+.messageList p:nth-child(4){
+  display: none;
+  color: #4e4f4f;
+}
+.messageList div:nth-child(5){
+  display: none;
+  color: #4e4f4f;
+}
+.messageList .show + p{
+  display: block;
+}
+.messageList .show + p + p{
+  display: block;
+}
+.messageList .show + p + p + p{
+  display: block;
+}
+.messageList .show + p + p + p + div{
+  display: block;
+}
